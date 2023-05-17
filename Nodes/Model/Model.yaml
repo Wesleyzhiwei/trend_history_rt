@@ -1,0 +1,93 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: Variable1
+  Id: g=9282ef66c50591eb065df04b45003c3e
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: -45
+- Name: Variable2
+  Id: g=e5a1d147745db239b5a62fe772088350
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/DINT_1"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Variable3
+  Id: g=efe2a87f0496fe57827b0ed7c4c8839a
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/INT_3"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: RefreshTime
+  Id: g=e469608b1a1f5043ab9afbb9111f8e9c
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 2000
+- Name: X_Interactive
+  Id: g=9a305356b151563b0fca23d57b44ee5d
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Y_Interactive
+  Id: g=6b91efc3eac22b1f652d5c471ba119b3
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: X_DateTime
+  Id: g=b7c2b6357becdea50a4d97b19402c254
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2023-05-16T09:00:00.0000000"
+- Name: X_Follow
+  Id: g=fcb7fa580b07d6fbde3ad5ee12135d78
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: X_TimeWindow
+  Id: g=0d090e41829edd20cef6d8523a5c0a88
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:00:10.0000000"
+- Name: Y_AutoScale
+  Id: g=89d5e53647ad838182ce86b4867b8f91
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Y_Max
+  Id: g=3b3e9a2cd60243a060dd236a89fc4589
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 100
+- Name: Y_Min
+  Id: g=9a81d484b0b8247658f2d021a62181b3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: -100
+- Name: Pen1Thickness
+  Id: g=20f404d47399626e825c99bedb91876a
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 1
+- Name: Pen1Enable
+  Id: g=68b7405f59c63b5ddb8962156c8cb27b
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
