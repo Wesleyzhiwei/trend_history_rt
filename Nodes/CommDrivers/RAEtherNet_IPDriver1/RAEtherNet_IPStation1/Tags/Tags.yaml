@@ -1,8 +1,18 @@
 Name: Tags
-Type: BaseObjectType
+Type: FolderType
 Children:
 - Name: Controller Tags
   Type: TagStructure
+  DataType: Structure
+  Value: 
+   {
+    "Type": 22,
+    "Body": {
+     "TypeId": {
+      "Id": 22
+     }
+    }
+   }
   Children:
   - Name: DINT_1
     Type: RAEtherNetIPTag
@@ -24,6 +34,22 @@ Children:
       Value: "INT_3"
   - Name: timer2
     Type: TIMER
+    DataType: TIMER
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "ef80c8e561cbd951ee0f1f5a80b17df5",
+       "Namespace": 7
+      },
+      "Body": {
+       "ACC": 0,
+       "DN": false,
+       "EN": false,
+       "PRE": 0,
+       "TT": false
+      }
+     }
     Children:
     - Name: ACC
       Id: g=9ef98e3d59377bce724733478ee9b571

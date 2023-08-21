@@ -17,6 +17,11 @@ Children:
     Type: GaugeStyle
   - Name: NavigationPanelStyle
     Type: NavigationPanelStyle
+    Children:
+    - Name: IconUsesTextColor
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
   - Name: ChartStyle
     Type: ChartStyle
   - Name: DataListStyle
@@ -76,12 +81,12 @@ Children:
     Type: BaseDataVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 1200.0
+    Value: 1920.0
   - Name: Height
     Type: BaseDataVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 800.0
+    Value: 1080.0
   - Name: Trend1
     Type: Trend
     Children:
@@ -144,6 +149,10 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             Value: true
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+            Value: 0
       - Name: Variable3
         Type: TrendPen
         DataType: BaseDataType
@@ -267,6 +276,11 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "{NodeId:ns=7;g=b7c2b635-7bec-dea5-0a4d-97b19402c254}"
+      - Name: SnapPosition
+        Type: BaseDataVariableType
+        DataType: SnapPositionEnum
+        ModellingRule: Optional
+        Value: 1
     - Name: YAxis
       Type: ValueAxis
       Children:
@@ -306,15 +320,10 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "{NodeId:ns=7;g=6b91efc3-eac2-2b1f-652d-5c471ba119b3}"
-      - Name: Alias1
-        Type: Alias
-        DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
-        Children:
-        - Name: Kind
-          Type: PropertyType
-          DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: Position
+        Type: BaseDataVariableType
+        DataType: HorizontalPositionEnum
+        Value: 0
     - Name: LegendVisible
       Type: BaseDataVariableType
       DataType: Boolean
@@ -1265,7 +1274,16 @@ Children:
         DataType: TimeZoneDataType
         ReferenceType: HasProperty
         AccessLevel: Read
-        Value: {"TypeId":{"Id":8912},"Body":{"offset":0,"daylightSavingInOffset":false}}
+        Value: 
+         {
+          "TypeId": {
+           "Id": 8912
+          },
+          "Body": {
+           "offset": 0,
+           "daylightSavingInOffset": false
+          }
+         }
       - Name: Groups
         Type: BaseObjectType
       - Name: Roles
